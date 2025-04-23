@@ -2,7 +2,6 @@ from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
 from django.db import models
 
-
 class IDMapping(models.Model):
     uid = models.UUIDField(primary_key=True)
     content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
