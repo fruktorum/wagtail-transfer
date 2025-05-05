@@ -123,7 +123,9 @@ class FieldLocator:
         # the UID with the object
         pass
 
-    def uid_from_json(self, json_uid):
+    def uid_from_json(self, json_uid) -> tuple[str]:
+        if isinstance(json_uid, str):
+            return json_uid,
         # A UID coming from JSON data will arrive as a list (because JSON has no tuple type),
         # but we need a tuple because the importer logic expects a hashable type that we can use
         # in sets and dict keys
