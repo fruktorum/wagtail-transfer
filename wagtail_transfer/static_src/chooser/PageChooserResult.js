@@ -116,7 +116,7 @@ class PageChooserResult extends React.Component {
           <a
             href="#"
             onClick={onNavigate}
-            className="icon text-replace icon-arrow-right navigate-pages"
+            className="icon icon-arrow-right navigate-pages"
             title={`Explore subpages of ${page.title}`}
           >
             Explore
